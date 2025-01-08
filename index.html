@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Dinámicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1 class="header-text">Generador de Dinámicas</h1>
+        </div>
+
+        <form id="form">
+            <label for="participants">Cantidad de participantes:</label>
+            <input type="number" id="participants" min="1" placeholder="10">
+
+            <label for="numbers">Cantidad de números:</label>
+            <input type="number" id="numbers" min="1" placeholder="3">
+
+            <label for="min-value">Valor mínimo:</label>
+            <input type="number" id="min-value" placeholder="1">
+
+            <label for="max-value">Valor máximo:</label>
+            <input type="number" id="max-value" placeholder="10">
+
+            <button type="button" id="generate-table">Generar tabla de dinámica</button>
+            <button type="button" id="generate-blessed">Generar Bendecidos</button>
+            <button type="reset">Limpiar</button>
+            <button type="button" id="export-pdf">Exportar a PDF</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
