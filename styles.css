@@ -15,14 +15,25 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .logo {
@@ -30,74 +41,58 @@ body {
     height: auto;
 }
 
-.header-text {
-    font-size: 24px;
+.side-text {
+    font-size: 20px;
     font-weight: bold;
     color: #333;
     text-align: right;
-    margin: 0;
+    line-height: 1.5;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
     color: #555;
+    margin-right: 10px;
+    white-space: nowrap;
 }
 
 input {
-    display: block;
-    width: 100%;
+    flex: 1;
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 10px 20px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 #results {
     margin-top: 20px;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
