@@ -1,23 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Cambia si usas un color sólido */
-    background-image: url('background.jpg'); /* Cambia 'background.jpg' por la imagen de fondo */
-    background-size: cover; /* Ajusta para que la imagen cubra todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en la página */
+    background-color: #f4f4f4; /* Fondo general de la página */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura del fondo para que ocupe toda la pantalla */
+    min-height: 100vh; /* Altura mínima igual al tamaño de la pantalla */
     margin: 0;
 }
 
+/* Estilo para el contenedor principal */
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 800px;
+    max-width: 900px; /* Ajusta el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto elegante */
 }
 
 #titulo {
