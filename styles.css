@@ -1,25 +1,24 @@
+/* Ajusta el contenido del body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Cambia si usas un color sólido */
-    background-image: url('background.jpg'); /* Cambia 'background.jpg' por la imagen de fondo */
-    background-size: cover; /* Ajusta para que la imagen cubra todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center; /* Centra la imagen en la página */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ajusta la altura del fondo para que ocupe toda la pantalla */
-    margin: 0;
+    align-items: flex-start; /* Cambiado para un mejor alineamiento vertical */
+    min-height: 100vh;
 }
 
-/* Estilo para el contenedor principal */
+/* Ajusta el contenedor principal */
 .container {
-    max-width: 900px; /* Ajusta el ancho máximo del contenido */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 1200px; /* Ancho máximo ajustado al tamaño deseado */
+    width: 95%; /* Hace que ocupe casi todo el ancho disponible en pantallas más pequeñas */
+    margin: 20px auto; /* Centra la página con márgenes arriba/abajo */
     padding: 20px; /* Espaciado interno */
     background-color: #ffffff; /* Fondo blanco */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto elegante */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra elegante */
 }
 
 #titulo {
@@ -77,4 +76,20 @@ button:hover {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+/* Asegura que las tablas no se salgan del contenedor */
+table {
+    width: 100%; /* Haz que ocupe el 100% del ancho del contenedor */
+    border-collapse: collapse; /* Combina bordes de celdas */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Bordes claros */
+    text-align: center;
+    padding: 10px; /* Espaciado interno */
+}
+
+th {
+    background-color: #f2f2f2; /* Fondo diferente para encabezados */
 }
