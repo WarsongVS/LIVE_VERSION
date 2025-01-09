@@ -1,10 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Fondo general de la página */
+    background-color: #f4f4f4; /* Cambia si usas un color sólido */
+    background-image: url('background.jpg'); /* Cambia 'background.jpg' por la imagen de fondo */
+    background-size: cover; /* Ajusta para que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en la página */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Altura mínima igual al tamaño de la pantalla */
+    height: 100vh; /* Ajusta la altura del fondo para que ocupe toda la pantalla */
     margin: 0;
 }
 
