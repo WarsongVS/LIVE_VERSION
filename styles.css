@@ -39,11 +39,15 @@ body {
     height: 150px;
 }
 
-.math-text {
-    text-align: left;
-    font-size: 28px;
-    line-height: 1.5;
-    font-weight: bold;
+.side-image {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.imagen-derecha {
+    max-width: 100%; /* Escala automáticamente el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
 }
 
 .inputs {
@@ -92,4 +96,20 @@ th, td {
 
 th {
     background-color: #f2f2f2; /* Fondo diferente para encabezados */
+}
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+   .container {
+       padding: 10px; /* Reduce el padding en dispositivos pequeños */
+   }
+
+   table {
+       font-size: 12px; /* Reduce el tamaño de texto en tablas */
+   }
+
+   .buttons {
+       display: flex;
+       flex-wrap: wrap; /* Asegura que los botones se ajusten */
+       gap: 10px;
+   }
 }
