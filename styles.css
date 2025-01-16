@@ -59,7 +59,7 @@ button:hover {
 }
 
 .input-group input {
-    flex-basis: 60%; /* Los cuadros de entrada ocuparán el 60% del ancho */
+    flex-basis: 40%; /* Los cuadros de entrada ocuparán el 40% del ancho */
     padding: 5px; /* Espaciado interno del input */
     border: 1px solid #ccc; /* Borde gris claro */
     border-radius: 4px; /* Bordes redondeados */
