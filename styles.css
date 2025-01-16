@@ -117,3 +117,23 @@ button:hover {
         height: auto; /* Mantiene la proporción de la imagen */
     }
 }
+/* Ajustar el tamaño de las celdas de la tabla */
+table td {
+    width: 150px; /* Ancho de las celdas */
+    height: 150px; /* Alto de las celdas */
+    text-align: center; /* Centrar el contenido */
+    vertical-align: middle; /* Centrar verticalmente */
+    padding: 10px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+}
+
+/* Ajustar el tamaño del cuadro de texto dentro de la tabla */
+table td input[type="text"] {
+    width: 90%; /* Ocupa el 90% del ancho de la celda */
+    height: 80%; /* Ocupa el 80% del alto de la celda */
+    padding: 5px; /* Espaciado interno del cuadro de texto */
+    font-size: 16px; /* Tamaño del texto */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
+}
