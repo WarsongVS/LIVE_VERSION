@@ -44,25 +44,23 @@ button:hover {
     margin-top: 20px;
 }
 
-/* Alinear etiquetas e inputs en la misma línea */
+/* Estilo para alinear las etiquetas y los inputs */
 .input-group {
-    display: flex; /* Alinea los elementos en fila */
-    align-items: center; /* Alinea verticalmente al centro */
+    display: grid; /* Usa un diseño de cuadrícula */
+    grid-template-columns: auto auto; /* Dos columnas: etiquetas e inputs */
+    align-items: center; /* Alinea verticalmente los elementos */
     gap: 10px; /* Espacio entre los elementos */
-    margin-bottom: 15px; /* Espaciado entre filas */
+    margin-bottom: 15px; /* Espacio entre filas */
 }
 
 .input-group label {
-    flex-basis: 40%; /* Las etiquetas ocuparán el 40% del ancho */
-    text-align: right; /* Alinea el texto de las etiquetas a la derecha */
-    font-size: 14px; /* Ajusta el tamaño del texto */
+    text-align: right; /* Alinea las etiquetas a la derecha */
+    margin-right: 5px; /* Espaciado entre la etiqueta y el input */
 }
 
 .input-group input {
-    flex-basis: 40%; /* Los cuadros de entrada ocuparán el 40% del ancho */
     padding: 5px; /* Espaciado interno del input */
     border: 1px solid #ccc; /* Borde gris claro */
     border-radius: 4px; /* Bordes redondeados */
-    font-size: 14px; /* Ajusta el tamaño del texto */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-sizing: border-box; /* Asegura que el padding no afecta el ancho */
 }
