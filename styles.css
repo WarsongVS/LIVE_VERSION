@@ -107,7 +107,7 @@ button:hover {
     }
 
     button {
-        width: 20%; /* Los botones ocupan todo el ancho disponible */
+        width: 30%; /* Los botones ocupan todo el ancho disponible */
         padding: 12px; /* Aumenta el área táctil */
         font-size: 16px;
     }
