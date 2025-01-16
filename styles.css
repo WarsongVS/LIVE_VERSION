@@ -17,13 +17,13 @@ body {
 
 #titulo {
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
 label, input, button {
     display: block;
-    width: 100%;
+    width: 60%
     margin-bottom: 10px;
 }
 
