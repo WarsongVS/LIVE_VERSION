@@ -65,47 +65,55 @@ button:hover {
     box-sizing: border-box; /* Asegura que el padding no afecta el ancho */
 }
 
-/* Ajustes para pantallas pequeñas (celulares) */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
     body {
-        display: block; /* Cambia el diseño a un flujo vertical */
+        display: block; /* Asegura que los elementos fluyan verticalmente */
+        margin: 0;
         padding: 10px;
+        text-align: center;
     }
 
     .container {
-        width: 100%; /* La caja ocupará todo el ancho disponible */
-        box-shadow: none; /* Elimina la sombra en dispositivos móviles */
-        border-radius: 0; /* Esquinas no redondeadas */
-        padding: 15px;
+        width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+        padding: 10px;
+        box-shadow: none; /* Elimina sombras en dispositivos pequeños */
+        border-radius: 0; /* Esquinas sin redondear */
     }
 
     .input-group {
-        grid-template-columns: 1fr; /* Cada elemento ocupa toda la fila */
-        gap: 5px; /* Espacio reducido entre elementos */
+        display: flex;
+        flex-direction: column; /* Coloca los elementos uno debajo del otro */
+        align-items: stretch; /* Asegura que ocupen todo el ancho */
+        gap: 10px; /* Espacio entre los elementos */
+        margin-bottom: 15px;
     }
 
     .input-group label {
-        text-align: left; /* Alinea las etiquetas a la izquierda */
-        margin: 0; /* Sin margen adicional */
+        text-align: left; /* Etiquetas alineadas a la izquierda */
+        margin-bottom: 5px;
     }
 
     .input-group input {
-        width: 100%; /* Inputs ocupan todo el ancho */
+        width: 100%; /* Inputs ocupan todo el ancho disponible */
+        padding: 8px;
+        font-size: 16px;
     }
 
     .button-group {
         display: flex;
-        flex-direction: column; /* Botones en columna */
+        flex-direction: column; /* Coloca los botones en columna */
         gap: 10px;
     }
 
     button {
-        width: 100%; /* Botones ocupan todo el ancho */
-        padding: 12px; /* Más espacio en dispositivos táctiles */
+        width: 20%; /* Los botones ocupan todo el ancho disponible */
+        padding: 12px; /* Aumenta el área táctil */
+        font-size: 16px;
     }
 
     img.logo-img {
-        width: 100%; /* La imagen ocupará el ancho completo */
-        height: auto; /* Mantiene proporción */
+        max-width: 100%; /* Imagen adaptada al ancho del dispositivo */
+        height: auto; /* Mantiene la proporción de la imagen */
     }
 }
