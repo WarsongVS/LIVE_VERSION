@@ -23,7 +23,7 @@ body {
 
 label, input, button {
     display: block;
-    width: 48%;
+    width: 100%;
     margin-bottom: 10px;
 }
 
