@@ -76,8 +76,8 @@ function exportTable(format) {
     const minutes = String(currentDate.getMinutes()).padStart(2, '0');
     const seconds = String(currentDate.getSeconds()).padStart(2, '0');
     const timestamp = `${year}-${month}-${day}_${hours}_${minutes}_${seconds}`;
-    const filename = `${timestamp}.${format}`;
-
+    const filename = `Dinamica_${timestamp}.${format}`;
+    
     // Hacer visible el título temporalmente
     title.style.display = 'block';
 
