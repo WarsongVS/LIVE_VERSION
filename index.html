@@ -16,21 +16,24 @@
 </head>
 <body>
     <h1>Generador de Dinámicas</h1>
+    
     <!-- Imagen debajo del título -->
     <img src="LOGO&DALE.png" alt="LOGO" class="logo-img">
     
-    <label for="participants">Cantidad de participantes</label><br>
-    <input type="number" id="participants" min="1" max="30" value="10"><br>
-
-    <label for="quantity">Cantidad de números:</label><br>
-    <input type="number" id="quantity" min="1" value="3"><br>
-
-    <label for="minValue">Valor mínimo:</label><br>
-    <input type="number" id="minValue" value="1"><br>
-
-    <label for="maxValue">Valor máximo:</label><br>
-    <input type="number" id="maxValue" value="10"><br>
-
+        <!-- Formulario de entrada -->
+        <div class="input-group">
+            <label for="participants">Cantidad de participantes:</label>
+            <input type="number" id="participants" min="1" max="30" value="10">
+            <label for="minValue">Valor mínimo:</label>
+            <input type="number" id="minValue" value="1">
+        </div>
+        <div class="input-group">
+            <label for="quantity">Cantidad de números:</label>
+            <input type="number" id="quantity" min="1" value="3">
+            <label for="maxValue">Valor máximo:</label>
+            <input type="number" id="maxValue" value="10">
+        </div>
+    
     <button id="generateTableBtn">Generar tabla de dinámica</button>
     <button id="generateBtn">Generar Bendecidos</button>
 
