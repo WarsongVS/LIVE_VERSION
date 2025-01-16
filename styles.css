@@ -64,3 +64,48 @@ button:hover {
     border-radius: 4px; /* Bordes redondeados */
     box-sizing: border-box; /* Asegura que el padding no afecta el ancho */
 }
+
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+    body {
+        display: block; /* Cambia el diseño a un flujo vertical */
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%; /* La caja ocupará todo el ancho disponible */
+        box-shadow: none; /* Elimina la sombra en dispositivos móviles */
+        border-radius: 0; /* Esquinas no redondeadas */
+        padding: 15px;
+    }
+
+    .input-group {
+        grid-template-columns: 1fr; /* Cada elemento ocupa toda la fila */
+        gap: 5px; /* Espacio reducido entre elementos */
+    }
+
+    .input-group label {
+        text-align: left; /* Alinea las etiquetas a la izquierda */
+        margin: 0; /* Sin margen adicional */
+    }
+
+    .input-group input {
+        width: 100%; /* Inputs ocupan todo el ancho */
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column; /* Botones en columna */
+        gap: 10px;
+    }
+
+    button {
+        width: 100%; /* Botones ocupan todo el ancho */
+        padding: 12px; /* Más espacio en dispositivos táctiles */
+    }
+
+    img.logo-img {
+        width: 100%; /* La imagen ocupará el ancho completo */
+        height: auto; /* Mantiene proporción */
+    }
+}
