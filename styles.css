@@ -112,7 +112,7 @@ h1 {
 }
 
 .button-group button {
-    width: 48%;
+    width: 30%;
     margin-bottom: 10px;
 }
 
@@ -129,7 +129,7 @@ button {
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
-    width: 48%;
+    width: 30%;
 }
 
 button:hover {
