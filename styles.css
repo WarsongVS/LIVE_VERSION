@@ -1,0 +1,141 @@
+/* Ajustar la disposición de los elementos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Ajuste del contenedor principal */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Ajustes para que la tabla sea responsive */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+td {
+    word-wrap: break-word;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Ajuste de los botones */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.logo-img {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 300px;  /* Tamaño máximo en pantalla grande */
+    height: auto;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group label,
+.input-group input {
+    width: 48%;
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label,
+    .input-group input {
+        width: 100%;
+    }
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button-group button {
+    width: 48%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .button-group button {
+        width: 100%;
+    }
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 48%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img[src="image.png"] {
+    width: 50px;
+    height: 50px;
